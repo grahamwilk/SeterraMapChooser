@@ -12,12 +12,12 @@ namespace seterrachooser
         {
             // If you are running this program on your own computer, replace all the file paths in the following 4 lines with
             // the file paths of where the CSV files are located on your computer.
-            string[] smallMaps = File.ReadAllLines("C:\\Users\\elaco\\Documents\\smallMaps.csv");
-            string[] mediumMaps = File.ReadAllLines("C:\\Users\\elaco\\Documents\\mediumMaps.csv");
-            string[] largeMaps = File.ReadAllLines("C:\\Users\\elaco\\Documents\\largeMaps.csv");
-            string[] hugeMaps = File.ReadAllLines("C:\\Users\\elaco\\Documents\\hugeMaps.csv");
+            string[] smallMaps = File.ReadAllLines("C:\\Users\\astro\\Documents\\smallMaps.csv");
+            string[] mediumMaps = File.ReadAllLines("C:\\Users\\astro\\Documents\\mediumMaps.csv");
+            string[] largeMaps = File.ReadAllLines("C:\\Users\\astro\\Documents\\largeMaps.csv");
+            string[] hugeMaps = File.ReadAllLines("C:\\Users\\astro\\Documents\\hugeMaps.csv");
 
-            string[] categories = { "Pin", "Pin Hard", "Place Labels", "Multiple Choice", "Shownext" };
+            string[] categories = { "Pin", "Pin Hard", "Place Labels", "Multiple Choice", "Shownext", "Type" };
             int mapCount = 0;
             Random random = new Random();
             List<string> mapNames = new List<string>();
@@ -33,25 +33,29 @@ namespace seterrachooser
                 if (!mapNames.Contains(mapChoice))
                 {
                     int bigRandomNumber = random.Next(1, 101);
-                    if (bigRandomNumber <= 25)
+                    if (bigRandomNumber <= 20)
                     {
                         randomNumber = 0;
                     }
-                    else if (bigRandomNumber <= 40)
+                    else if (bigRandomNumber <= 30)
                     {
                         randomNumber = 1;
                     }
-                    else if (bigRandomNumber <= 65)
+                    else if (bigRandomNumber <= 50)
                     {
                         randomNumber = 2;
                     }
-                    else if (bigRandomNumber <= 85)
+                    else if (bigRandomNumber <= 65)
                     {
                         randomNumber = 3;
                     }
-                    else if (bigRandomNumber <= 100)
+                    else if (bigRandomNumber <= 75)
                     {
                         randomNumber = 4;
+                    }
+                    else if (bigRandomNumber <= 100)
+                    {
+                        randomNumber = 5;
                     }
                     string category = categories[randomNumber];
                     if (!categoryList.Contains(category))
@@ -72,25 +76,29 @@ namespace seterrachooser
                 if (!mapNames.Contains(mapChoice))
                 {
                     int bigRandomNumber = random.Next(1, 101);
-                    if (bigRandomNumber <= 25)
+                    if (bigRandomNumber <= 20)
                     {
                         randomNumber = 0;
                     }
-                    else if (bigRandomNumber <= 40)
+                    else if (bigRandomNumber <= 30)
                     {
                         randomNumber = 1;
                     }
-                    else if (bigRandomNumber <= 65)
+                    else if (bigRandomNumber <= 50)
                     {
                         randomNumber = 2;
                     }
-                    else if (bigRandomNumber <= 85)
+                    else if (bigRandomNumber <= 65)
                     {
                         randomNumber = 3;
                     }
-                    else if (bigRandomNumber <= 100)
+                    else if (bigRandomNumber <= 75)
                     {
                         randomNumber = 4;
+                    }
+                    else if (bigRandomNumber <= 100)
+                    {
+                        randomNumber = 5;
                     }
                     string category = categories[randomNumber];
                     if (!categoryList.Contains(category))
@@ -111,25 +119,29 @@ namespace seterrachooser
                 if (!mapNames.Contains(mapChoice))
                 {
                     int bigRandomNumber = random.Next(1, 101);
-                    if (bigRandomNumber <= 25)
+                    if (bigRandomNumber <= 20)
                     {
                         randomNumber = 0;
                     }
-                    else if (bigRandomNumber <= 40)
+                    else if (bigRandomNumber <= 30)
                     {
                         randomNumber = 1;
                     }
-                    else if (bigRandomNumber <= 65)
+                    else if (bigRandomNumber <= 50)
                     {
                         randomNumber = 2;
                     }
-                    else if (bigRandomNumber <= 85)
+                    else if (bigRandomNumber <= 65)
                     {
                         randomNumber = 3;
                     }
-                    else if (bigRandomNumber <= 100)
+                    else if (bigRandomNumber <= 75)
                     {
                         randomNumber = 4;
+                    }
+                    else if (bigRandomNumber <= 100)
+                    {
+                        randomNumber = 5;
                     }
                     string category = categories[randomNumber];
                     if (!categoryList.Contains(category))
@@ -150,25 +162,29 @@ namespace seterrachooser
                 if (!mapNames.Contains(mapChoice))
                 {
                     int bigRandomNumber = random.Next(1, 101);
-                    if (bigRandomNumber <= 25)
+                    if (bigRandomNumber <= 20)
                     {
                         randomNumber = 0;
                     }
-                    else if (bigRandomNumber <= 40)
+                    else if (bigRandomNumber <= 30)
                     {
                         randomNumber = 1;
                     }
-                    else if (bigRandomNumber <= 65)
+                    else if (bigRandomNumber <= 50)
                     {
                         randomNumber = 2;
                     }
-                    else if (bigRandomNumber <= 85)
+                    else if (bigRandomNumber <= 65)
                     {
                         randomNumber = 3;
                     }
-                    else if (bigRandomNumber <= 100)
+                    else if (bigRandomNumber <= 75)
                     {
                         randomNumber = 4;
+                    }
+                    else if (bigRandomNumber <= 100)
+                    {
+                        randomNumber = 5;
                     }
                     string category = categories[randomNumber];
                     if (!categoryList.Contains(category))
